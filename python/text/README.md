@@ -31,6 +31,22 @@ useful to first look through the [Label Detection](https://cloud.google.com/visi
 which explores use of the Vision API in more detail.
 
 ## Initial Setup
+create a project on google cloud and add to it the vision api
+add credentials for this project (service account)
+download the json file (service_account.json) and store it inside the local project folder
+
+set the environment variable GOOGLE_APPLICATION_CREDENTIALS:
+set OOGLE_APPLICATION_CREDENTIALS=[Location of the service account file]\service_account.json
+
+clone or download  https://github.com/GoogleCloudPlatform/cloud-vision
+
+pip install --upgrade google-api-python-client
+pip install nltk   (for natural language processing)
+pip install redis
+python -m nltk.downloader stopwords
+python -m nltk.downloader punkt
+conda update setuptools
+pip install google-cloud
 
 ### Enable the Cloud Vision API for Your Project ###
 
